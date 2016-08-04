@@ -1,0 +1,261 @@
+<title>Beat It</title>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@hypirlink" />
+<meta property="og:url" content="https://byronhulcher.github.io/beat-it/" />
+<meta property="og:title" content="Beat It" />
+<meta property="og:description" content="New Yorker articles making you Howl?" />
+<meta property="og:image" content="" />
+<style>
+	body {
+		background-color: #9CCC65;
+		/* Remove space around window edge */
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	}
+
+	/*
+	The attributes below style the css
+	property transitions.
+	*/
+
+	div {
+	  -webkit-transition-property: all;
+	  -webkit-transition-duration: 0.2s;
+	  -webkit-transition-timing-function: ease;
+	  -webkit-transition-delay: 0s;
+	}
+
+	/*
+	The two classes below work together
+	to center the content vertically and
+	horizontally on the screen.
+	*/
+
+	.wrapperOutside {
+	   display: table;
+	   width: 100vw;
+	   height: 100vh;
+	}
+
+	.wrapperInside {
+	   display: table-cell;
+	   text-align: center;
+	   vertical-align: middle;
+	}
+
+	/*
+	The attributes below style the css
+	dialog window, and content.
+	*/
+
+	.dialogContainer {
+	  /* Form */
+	  width: 300px;
+	  height: auto;
+	  /*
+	  Drop Shadow
+	  a. Horizontal shadow
+	  b. Vertical shadow
+	  c. Blur
+	  d. Spread
+	  e. Color
+	  */
+	  -webkit-box-shadow: 0 -2px 25px 0 rgba(0, 0, 0, 0.15), 0 13px 25px 0 rgba(0, 0, 0, 0.3);
+	  background-color: #FFFFFF;
+	  /* Internal padding */
+	  padding-top: 0;
+	  padding-left: 0;
+	  padding-right: 0;
+	  padding-bottom: 0;
+	  /* External padding */
+	  margin-top: 0;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-bottom: 0; 
+	}
+
+	.dialogContent { 
+	  /* Form */   
+	  width: auto;
+	  height: auto;
+	  background-color: #FFFFFF;
+	  /* Corner radius */
+	  border-top-left-radius:2px;
+	  border-top-right-radius:2px;
+	  border-bottom-right-radius:0;
+	  border-bottom-left-radius:0;    
+	  /* Internal padding */
+	  padding-top: 21px;
+	  padding-left: 24px;
+	  padding-right: 24px;
+	  padding-bottom: 12px;
+	  /* External padding */
+	  margin-top: 0;
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom: 0;     
+	}
+
+	.dialogContentTitle {
+	  /* Form */  
+	  background-color: #FFFFFF; 
+	  /* Typography */  
+	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	  font-weight: 700;
+	  font-size: 20px;
+	  color: rgba(0,0,0,.8);
+	  line-height: 24px;  
+	  text-align: left;
+	  letter-spacing: 0.03px;
+	  /* Internal padding */
+	  padding-top: 0;
+	  padding-left: 0;
+	  padding-right: 0;
+	  padding-bottom: 0;
+	  /* External padding */
+	  margin-top: 0;
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom: 0;    
+	}
+
+	.dialogContentBody {
+	  /* Typography */
+	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	  font-weight: 500;
+	  font-size: 16px;
+	  color: rgba(0,0,0,.7);
+	  line-height: 24px;    
+	  text-align: left;
+	  letter-spacing: 0.03px;
+	  /* Internal padding */
+	  padding-top: 14px;
+	  padding-left: 0;
+	  padding-right: 0;
+	  padding-bottom: 0;   
+	  /* External padding */
+	  margin-top: 0;
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom: 0;       
+	}
+
+	.dialogActionBar {
+	  /* Form */
+	  width: auto;
+	  height: 48px;
+	  background-color: #FFFFFF;
+	  text-align: center;
+	  /* Corner radius */
+	  border-top-left-radius:0;
+	  border-top-right-radius:0;
+	  border-bottom-right-radius:2px;
+	  border-bottom-left-radius:2px;  
+	  /* Internal padding */
+	  padding-top: 0;
+	  padding-left: 16px;
+	  padding-right: 15px;
+	  padding-bottom: 8px;  
+	  /* External padding */
+	  margin-top: 0;
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom: 0;      
+	}
+
+	/*
+	The attributes below style the
+	hit target.
+	*/
+
+	.buttonTouchTarget {
+	  display: inline-block;
+	  background-color: rgba(0,0,0,0);
+	  /* Remove grey background on link clicked in ios safari */
+	  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+	/*
+	The attributes below style the
+	flat button based on the Google
+	material design language.
+	*/
+
+	.buttonFlat {
+	  /* Form */
+	  display: inline-block;
+	  height: 36px;
+	  background-color: rgba(9,9,9,0);
+	  /* Typography */
+	  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	  font-weight: 600;
+	  font-size: 14px;
+	  color:#b76780;
+	  line-height: 36px;    
+	  text-align: center;
+	  letter-spacing: 0.4px;     
+	  /* Internal padding */
+	  padding-top: 0;
+	  padding-left: 10px;
+	  padding-right: 10px;
+	  padding-bottom: 0;
+	  /* External padding – Touch target size */
+	  margin-top: 6px;
+	  margin-left: 4px;
+	  margin-right: 4px;
+	  margin-bottom: 6px;
+	  border-radius: 10px;
+	  font-size:0;
+	  transition: .5s;
+	}
+
+	.buttonFlat:hover {
+	  background-color: #f9dae6;
+	}
+
+	.buttonFlat:active {
+	  background-color:#f9dae6;
+	}
+
+	.buttonFlat::after {
+	  font-weight: 600;
+	  font-size: 16px;
+	  color:#b76780;
+	  line-height: 36px;    
+	  text-align: center;
+	  letter-spacing: 0.4px;     
+	  content: "Drag or right-click here";
+	}
+</style>
+
+<!-- Content wrapper -->
+<div class="wrapperOutside">
+	<div class="wrapperInside">
+		<!-- Dialog -->
+		<div class="dialogContainer">
+			<!-- Dialog title and body -->
+			<div class="dialogContent">
+				<div class="dialogContentTitle">Beat It</div>
+				<div class="dialogContentBody">Either drag the link below to your bookmarks bar or right-click, copy the address, and then create a new bookmark. 
+<br><br>
+					Then click the bookmark anytime you're on a super long New Yorker piece.</div>
+				</div>
+		 			<!-- Dialog action bar -->
+		 			<div class="dialogActionBar">
+				<!-- Buttons -->
+				<a class="buttonTouchTarget" id="buttonOneTouchTarget" title="Beat It" href="javascript:void%20function(e){var%20t=function(e){e=jQuery,e(%22.descender%22).removeClass(%22descender%22),e(%22figure%22).remove(),e(%22blockquote%20p:first-of-type%22).unwrap(),e(%22p%22).each(function(){e(this).text(e(this).text().toLowerCase())}),e(%22p%22).each(function(){e(this).html(e(this).html().replace(/\.(%3F=\s[a-zA-Z]{3})/g,%22%3Cp%3E%22))}),e(%22p%22).each(function(){e(this).html(e(this).html().replace(/[,-;:]/g,%22%22))}),e(%22p%22).each(function(){e(this).html(e(this).html().replace(/['%22“”]+/g,%22%22))}),e(%22p%22).each(function(){e(this).html(e(this).html().replace(/[—-]+/g,%22%22))}),e(%22.articleBody%3Ep%22).css({%22margin-left%22:%222em%22,%22margin-bottom%22:%220%22,%22text-indent%22:%22-2em%22}),e(%22.articleBody%3Ep:nth-child(4n+4)%22).css({%22margin-bottom%22:%222em%22})},a=e%26%26e.fn%26%26parseFloat(e.fn.jquery)%3E=1.7;if(a)t(e);else{var%20n=document.createElement(%22script%22);n.src=%22//ajax.googleapis.com/ajax/libs/jquery/1/jquery.js%22,n.onload=n.onreadystatechange=function(){var%20e=this.readyState;e%26%26%22loaded%22!==e%26%26%22complete%22!==e||t(jQuery.noConflict())}}document.getElementsByTagName(%22head%22)[0].appendChild(n)}(window.jQuery);">
+				<div class="buttonFlat" id="buttonOne" fit>Beat It</div>
+				</a><!-- This comment removes 4px gap between buttons
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://minifiedjs.com/download/minified-web.js">
+<script>
+	$('a').on('click', function(e) {
+	  e.preventDefault();
+	});
+</script>
